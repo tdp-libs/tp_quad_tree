@@ -63,7 +63,7 @@ public:
          will limit the search radius.
   \return The coord if one is found, else a null Coord.
   */
-  const Coord* closestPoint(const Coord& point, int& distSQ);
+  const Coord* closestPoint(const Coord& point, int& distSQ)const;
 
 private:
   QuadTreeInt(const QuadTreeInt&);

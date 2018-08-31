@@ -105,7 +105,7 @@ struct QuadTreeInt::Cell
   }
 
   //################################################################################################
-  void closestPoint(int x, int y, int& distSQ, const QuadTreeInt::Coord*& closestPoint)
+  void closestPoint(int x, int y, int& distSQ, const QuadTreeInt::Coord*& closestPoint) const
   {
     if(children)
     {
@@ -248,7 +248,7 @@ void QuadTreeInt::addCoord(const QuadTreeInt::Coord& coord)
 }
 
 //##################################################################################################
-const QuadTreeInt::Coord* QuadTreeInt::closestPoint(const QuadTreeInt::Coord& point, int& distSQ)
+const QuadTreeInt::Coord* QuadTreeInt::closestPoint(const QuadTreeInt::Coord& point, int& distSQ) const
 {
   const Coord* closestPoint=nullptr;
   m_root->closestPoint(point.x, point.y, distSQ, closestPoint);
