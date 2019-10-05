@@ -1,7 +1,7 @@
 TARGET = tp_quad_tree
 TEMPLATE = lib
 
-DEFINES += TDP_QUAD_TREE_LIBRARY
+DEFINES += tp_qt_QUAD_TREE_LIBRARY
 
 HEADERS += inc/tp_quad_tree/Globals.h
 
