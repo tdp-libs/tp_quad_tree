@@ -1,7 +1,7 @@
 #ifndef tp_quad_tree_QuadTreeInt_h
 #define tp_quad_tree_QuadTreeInt_h
 
-#include "tp_quad_tree/Globals.h"
+#include "tp_quad_tree/Globals.h" // IWYU pragma: keep
 
 namespace tp_quad_tree
 {
